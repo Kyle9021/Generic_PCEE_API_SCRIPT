@@ -1,10 +1,10 @@
 {
-  "query":"config from cloud.resource where api.name = 'aws-ec2-describe-instances' AND json.rule = state.name equals running",
+  "query":"<PUT_RQL_QUERY_HERE>",
   "timeRange":{
      "type":"relative",
      "value":{
         "unit":"hour",
-        "amount":24
+        "amount":<number_of_hours>
      }
   }
 }

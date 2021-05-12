@@ -63,6 +63,6 @@ do \
 curl --request POST \
 --url https://"${pcee_api_console_url}"/search/config \
 --header 'content-type: application/json; charset=UTF-8' \
---header 'x-redlock-auth: ${pcee_auth_token}'
+--header "x-redlock-auth: "${pcee_auth_token}""
 -d "{pcee_payload_file}";
 done

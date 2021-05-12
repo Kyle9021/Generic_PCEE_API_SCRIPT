@@ -3,8 +3,8 @@
   "timeRange":{
      "type":"relative",
      "value":{
-        "unit":"hour",
-        "amount":<number_of_hours>
+        "unit":"<CHOOSE_ONE: minute hour day week month year>",
+        "amount":"<number_as_an_integer_representing_the_unit_above>"
      }
   }
 }

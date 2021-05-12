@@ -30,7 +30,7 @@ pcee_payload_file_location="./config-file-template.json"
 # This is found  in the Prisma Cloud Console under: Compute > Manage/System on the downloads tab under Path to Console
 pcee_console_url="<REPLACE_WITH_THE_APPROPRIATE_VALUE_FOUND_ABOVE>"
 
-# Run the RQL in the console with the same time constaints as provided in the payload file and note how many entries
+# Run the RQL in the console with the same time constaints as provided in the config-file-template.json file and note how many entries
 pcee_rql_results=150
 
 # NOTHING BELOW THIS LINE NEEDS TO BE ALTERED

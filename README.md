@@ -22,3 +22,4 @@
 * [Official JQ Documentation](https://stedolan.github.io/jq/manual/)
 * [Grep Documentation](https://www.gnu.org/software/grep/manual/grep.html)
 * [Exporting variables for API Calls and why I choose bash](https://apiacademy.co/2019/10/devops-rest-api-execution-through-bash-shell-scripting/)
+* [Why Bash](https://www.redhat.com/sysadmin/favorite-shell)

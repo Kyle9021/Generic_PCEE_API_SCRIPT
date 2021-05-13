@@ -32,6 +32,7 @@ pcee_console_url="<REPLACE_WITH_THE_APPROPRIATE_VALUE_FOUND_ABOVE>"
 
 
 # NOTHING BELOW THIS LINE NEEDS TO BE ALTERED
+# not used in this script
 pcee_api_limit=50
 
 # so the json "config" file can be read by the curl command properly. 

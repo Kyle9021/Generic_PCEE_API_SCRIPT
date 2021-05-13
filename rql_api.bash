@@ -12,7 +12,7 @@
 # Place the access key and secret key between "<ACCESS_KEY>", <SECRET_KEY> marks respectively below.
 
 
-# Only variable(s) needing to be assigned by and end-user
+# Only variable(s) needing to be assigned by the end-user
 # Found on https://prisma.pan.dev/api/cloud/api-urls, replace value below
 
 pcee_console_api_url="api.prismacloud.io"

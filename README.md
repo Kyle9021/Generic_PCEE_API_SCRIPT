@@ -9,8 +9,8 @@
 
 ## Instructions
 
-* Step 1: `git clone https://github.com/Kyle9021/Generic_PCEE_API_SCRIPT`
-* Step 2: `cd Generic_PCEE_API_SCRIPT/`
+* Step 1: `git clone https://github.com/Kyle9021/generic_pcee_api_script`
+* Step 2: `cd generic_pcee_api_script/`
 * Step 3: `nano rql_api.bash` and assign variables according to comment documentation
 * Step 4: `nano config-file-template.json`and replace values within `<>` brackets
 * Step 5: Install jq if you dont have it `sudo apt update && upgrade -y` then `sudo apt-get install jq` 

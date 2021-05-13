@@ -62,4 +62,4 @@ curl --request POST \
 --header 'content-type: application/json; charset=UTF-8' \
 --header "x-redlock-auth: "${pcee_auth_token}"" \
 --header "Accept: text/csv" \
---data "{pcee_payload_file}"
+--data "${pcee_payload_file}"

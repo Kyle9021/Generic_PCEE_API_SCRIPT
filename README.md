@@ -1,4 +1,4 @@
-# Generic_PCEE_API_SCRIPT__FOR_RQL
+# Generic Prisma Cloud Enterprise Edition API SCRIPT FOR RQL
 
 ## Assumptions
 

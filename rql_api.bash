@@ -31,7 +31,6 @@ pcee_payload_file_location="./config-file-template.json"
 pcee_console_url="<REPLACE_WITH_THE_APPROPRIATE_VALUE_FOUND_ABOVE>"
 
 # Run the RQL in the console with the same time constaints as provided in the config-file-template.json file and note how many entries
-pcee_rql_results=150
 
 # NOTHING BELOW THIS LINE NEEDS TO BE ALTERED
 pcee_api_limit=50
@@ -58,11 +57,9 @@ pcee_compute_token=$(curl \
 -d "${pcee_compute_auth_body}" \
 "${pcee_console_url}"/api/v1/authenticate | jq -r '.token')
 
-for pcee_offset in $(seq 0 "${pcee_api_limit}" "${pcee_rql_results}");
-do \
+
 curl --request POST \
---url https://"${pcee_api_console_url}"/search/config?limit="${pcc_api_limit}"&offset="${pcee_offset}" \
+--url https://"${pcee_api_console_url}"/search/config \
 --header 'content-type: application/json; charset=UTF-8' \
---header "x-redlock-auth: "${pcee_auth_token}""
--d "{pcee_payload_file}";
-done
+--header "x-redlock-auth: "${pcee_auth_token}"" \
+--data "{pcee_payload_file}"

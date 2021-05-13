@@ -61,7 +61,7 @@ pcee_compute_token=$(curl \
 for pcee_offset in $(seq 0 "${pcee_api_limit}" "${pcee_rql_results}");
 do \
 curl --request POST \
---url https://"${pcee_api_console_url}"/search/config \
+--url https://"${pcee_api_console_url}"/search/config?limit="${pcc_api_limit}"&offset="${pcee_offset}" \
 --header 'content-type: application/json; charset=UTF-8' \
 --header "x-redlock-auth: "${pcee_auth_token}""
 -d "{pcee_payload_file}";

@@ -59,7 +59,7 @@ pcee_compute_token=$(curl \
 
 
 curl --request POST \
---url https://"${pcee_api_console_url}"/search/config \
+--url https://"${pcee_console_api_url}"/search/config \
 --header 'content-type: application/json; charset=UTF-8' \
 --header "x-redlock-auth: "${pcee_auth_token}"" \
 --data "{pcee_payload_file}"

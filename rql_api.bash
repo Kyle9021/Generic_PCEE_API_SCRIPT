@@ -28,7 +28,7 @@ pcee_payload_file_location="./config-file-template.json"
 
 
 # This is found  in the Prisma Cloud Console under: Compute > Manage/System on the downloads tab under Path to Console
-pcee_console_url="<REPLACE_WITH_THE_APPROPRIATE_VALUE_FOUND_ABOVE>"
+pcee_console_url="<REPLACE_WITH_THE_APPROPRIATE_VALUE_FOUND__IN_COMMENT_ABOVE>"
 
 
 # NOTHING BELOW THIS LINE NEEDS TO BE ALTERED

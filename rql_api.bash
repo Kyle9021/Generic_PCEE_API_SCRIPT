@@ -42,7 +42,7 @@ pcee_payload_file=$(cat "${pcee_payload_file_location}")
 pcee_auth_body="{\"username\":\"${pcee_accesskey}\", \"password\":\"${pcee_secretkey}\"}"
 
 # This saves the auth token needed to access the CSPM side of the Prisma Cloud API to a variable I named $pcee_auth_token
-pcee_auth_token=$(curl -s --request POST \
+pcee_auth_token=$(curl --request POST \
 --url "https://${pcee_console_api_url}/login" \
 --header 'Accept: application/json; charset=UTF-8' \
 --header 'Content-Type: application/json; charset=UTF-8' \
@@ -52,13 +52,13 @@ pcee_auth_token=$(curl -s --request POST \
 pcee_compute_auth_body="{\"username\":\"${pcee_accesskey}\", \"password\":\"${pcee_secretkey}\"}"
 
 # This saves the auth token needed to access the CWPP side of the Prisma Cloud API to a variable $pcee_compute_token
-pcee_compute_token=$(curl -s \
+pcee_compute_token=$(curl \
 -H "Content-Type: application/json" \
 -d "${pcee_compute_auth_body}" \
 "${pcee_console_url}/api/v1/authenticate" | jq -r '.token')
 
 
-curl -s --request POST \
+curl --request POST \
 --url "https://${pcee_console_api_url}/search/config" \
 --header 'content-type: application/json; charset=UTF-8' \
 --header "x-redlock-auth: ${pcee_auth_token}" \
